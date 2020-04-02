@@ -1,0 +1,105 @@
+export const modules = {
+  /* Not lazyloaded */
+  // BlocksMenu,
+
+  /* CORE GUTENBERG BLOCKS */
+  coredefault: () => import(/* webpackChunkName: "default" */ '~/components/core/default'),
+  coregroup: () => import(/* webpackChunkName: "columns" */ '~/components/core/Group'),
+  corecolumn: () => import(/* webpackChunkName: "columns" */ '~/components/core/Column'),
+  corecolumns: () => import(/* webpackChunkName: "columns" */ '~/components/core/Columns'),
+  coreparagraph: () => import(/* webpackChunkName: "paragraph" */ '~/components/core/Paragraph'),
+  coreimage: () => import(/* webpackChunkName: "image" */ '~/modules/images/ResponsiveImg'),
+  // coreimage: () => import(/* webpackChunkName: "image" */ '~/modules/images/Image'),
+  coregallery: () => import(/* webpackChunkName: "galerry" */ '~/modules/images/Gallery'),
+  corecover: () => import(/* webpackChunkName: "cover" */ '~/components/core/Cover'),
+  coreseparator: () => import(/* webpackChunkName: "separator" */ '~/components/core/Separator'),
+  corespacer: () => import(/* webpackChunkName: "separator" */ '~/components/core/Spacer'),
+  coreheading: () => import(/* webpackChunkName: "heading" */ '~/components/core/Heading'),
+  corebutton: () => import(/* webpackChunkName: "spacer" */ '~/components/core/Button'),
+  corebuttons: () => import(/* webpackChunkName: "spacer" */ '~/components/core/Buttons'),
+  corelist: () => import('~/components/core/List'),
+  corequote: () => import('~/components/core/Quote'),
+  corepullquote: () => import('~/components/core/Pullquote'),
+  coremediatext: () => import('~/components/core/MediaText'),
+  coretable: () => import('~/components/core/Table'),
+  coreembedyoutube: () => import('~/components/core/Embed'),
+  coreembedtwitter: () => import('~/components/core/Embed'),
+
+  /* CUSTOM GUTENBERG BLOCKS */
+  sojuzgraphquery: () => import(/* webpackChunkName: "base" */ '~/components/custom/GraphQuery'),
+  SlideWrapper: () => import('~/modules/common/SlideWrapper'),
+  // depreciated
+  // ChildPost: () => import(/* webpackChunkName: "crearsy" */ '~/components/custom/ChildPost'),
+  // cgbblockwrapper: () => import(/* webpackChunkName: "base" */ '~/components/custom/Wrapper'),
+  // query: () => import(/* webpackChunkName: "base" */ '~/components/custom/Query'),
+  // !depreciated
+
+  /* ACF FORM */ 
+  sojuzacfform: () => import('~/modules/form/AcfForm'),
+  sojuzacftext: () => import('~/modules/form/fields/AcfText'),
+  sojuzacftaxonomy: () => import('~/modules/form/fields/AcfTaxonomy'),
+  sojuzacfgroup: () => import('~/modules/form/fields/AcfGroup'),
+  sojuzacfrepeater: () => import('~/modules/form/fields/AcfRepeater'),
+  sojuzacfdate_time_picker: () => import('~/modules/form/fields/AcfDateTimePicker'),
+  sojuzacftrue_false: () => import('~/modules/form/fields/AcfToogle'),
+
+  /* NAVIGATION */
+  BlocksMenu: () => import('~/modules/navigation/BlocksMenu'),
+  // depreciated
+  // MetaList: () => import('~/components/postCards/MetaList'),
+  // !depreciated
+  NavCategory: () => import('~/modules/navigation/NavCategory'),
+  Pagination: () => import('~/modules/pagination/Pagination'),
+  NavItem: () => import('~/modules/navigation/NavMenuItem'),
+  NavLink: () => import('~/modules/navigation/NavLink'),
+  NavItemParent: () => import('~/modules/navigation/NavMenuItemParent'),
+  NavDropdown: () => import('~/modules/navigation/NavDropdown'),
+  LoginMenu: () => import(/* webpackChunkName: "default" */ '~/modules/login/LoginMenu'),
+  LogoutMenu: () => import(/* webpackChunkName: "default" */ '~/modules/login/LogoutMenu'),
+
+  /* ECCOMERCE */
+  CartButton: () => import(/* webpackChunkName: "default" */ '~/modules/cart/CartButton'),
+  Cart: () => import('~/components/Cart'),
+  AddToCart: () => import('~/modules/cart/AddToCart'),
+  // depreciated
+  // Sale: () => import(/* webpackChunkName: "crearsy" */ '~/components/postCards/Sale'),
+
+  /* FORMS */
+  // depreciated
+  // custominput: () => import('~/modules/forms/InputField'),
+  // Dropdown: () => import('~/modules/forms/Dropdown'),
+  // DropdownCategory: () => import('~/modules/forms/DropdownCategory'),
+  // !depreciated
+
+  /* PROFILE */
+  
+  // depreciated
+  // Profile: () => import(/* webpackChunkName: "profile" */ '~/modules/forms/Profile'),
+  // BillingForm: () => import(/* webpackChunkName: "profile" */ '~/modules/forms/BillingForm.vue'),
+  // ProfileBookmarks: () => import(/* webpackChunkName: "profile" */ '~/modules/profile/Bookmarks'),
+  // ProfileDownloads: () => import(/* webpackChunkName: "profile" */ '~/modules/profile/Downloads'),
+  // ProfilePurchaseHistory: () => import(/* webpackChunkName: "profile" */ '~/modules/profile/PurchaseHistory'),
+  // !depreciated
+
+  /* EXTRA  */
+
+  // depreciated
+  // PostCard: () => import(/* webpackChunkName: "crearsy" */ '~/components/postCards/PostCard'),
+  // SinglePost: () => import(/* webpackChunkName: "crearsy" */ '~/components/postCards/SinglePost'),
+  // ProductCard: () => import(/* webpackChunkName: "crearsy" */ '~/components/postCards/ProductCard'),
+  // ProductCardSlider: () => import(/* webpackChunkName: "crearsy" */ '~/components/postCards/ProductCardSlider'),
+  // SingleProduct: () => import(/* webpackChunkName: "crearsy" */ '~/components/postCards/SingleProduct'),
+  // !depreciated
+
+  /* MODULES  */
+  Login: () => import(/* webpackChunkName: "login" */ '~/modules/forms/Login'),
+  Register: () => import(/* webpackChunkName: "login" */ '~/modules/forms/Register'),
+  Search: () => import('~/modules/search/Search'),
+  Like: () => import('~/modules/like/Like'),
+  Bookmark: () => import('~/modules/bookmark/Bookmark'),
+  SocialShare: () => import('~/modules/social/SocialShareBlock'),
+  // depreciated
+  // ImgStatic: () => import('~/modules/images/ImgStatic'),
+  // ResponsiveImg: () => import('~/modules/images/ResponsiveImg'),
+  // !depreciated
+};
